@@ -2,12 +2,15 @@ body {
   font-family: "Poppins", sans-serif;
   color: #000000;
   background-color: #ffffff;
+  width: 192vh;
+  overflow-x: hidden;
 }
 
 .layout_padding {
   padding: 75px 100px;
   display: flex;
   align-items: flex-end;
+  padding-top: 100px;
 }
 
 .layout_padding2 {
@@ -71,11 +74,18 @@ body {
   transform: translate(100%, -50%);
 }
 
+
+.optionspage{
+  background-color: #b5caee;
+  background-image: url(../images/1.png);
+  background-size: cover;
+}
+
 /*header section*/
 .hero_area {
   height: 100vh;
   background-color: #b5caee;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/2.png);
   background-size: cover;
 }
 
@@ -189,14 +199,15 @@ a:focus {
 
 /*end header section*/
 .slider_section {
-  height: 90%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #ffffff;
+  background-color: #000000b3;
+  color: antiquewhite;
 }
 
 .slider_section .detail-box {
@@ -257,16 +268,15 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 10px;
+  flex-direction: row;
 }
 
 .do_section .do_container .box {
-  text-align: center;
-  position: relative;
   z-index: 5;
   margin: 35px 25px 0 25px;
 }
@@ -296,7 +306,7 @@ a:focus {
 }
 
 .do_section .do_container .box:hover .img-box {
-  background-color: #fec016;
+  background-color: red;
 }
 
 .do_section .do_container .arrow_bg::before {
@@ -390,6 +400,8 @@ a:focus {
 
 .client_section {
   padding: 150px;
+  margin-top: 100px;
+  background-color: #0000007a;
 }
 
 .client_section .heading_container {
@@ -666,7 +678,7 @@ a:focus {
 .info_section .info_form form button {
   display: inline-block;
   padding: 8px 30px;
-  background-color: #fbca47;
+  background-color: #fb4747;
   border: 1px solid #fbca47;
   color: #ffffff;
   margin-top: 15px;
@@ -676,7 +688,7 @@ a:focus {
 
 .info_section .info_form form button:hover {
   background-color: transparent;
-  color: #fbca47;
+  color: #fb4747;
 }
 
 .info_section .info_form .social_box {
@@ -834,10 +846,15 @@ a:hover {
 }
 
 .choose{ 
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .row2 {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.container--options{
+  color:white;
+
 }
